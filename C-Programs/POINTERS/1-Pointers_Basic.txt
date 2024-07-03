@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+  int Num = 25;
+
+  int *ptr = &Num;
+  
+  printf("Address:- %p\n",ptr);
+  
+  printf("Number:- %d\n",*ptr);
+ 
+  return 0;
+}
