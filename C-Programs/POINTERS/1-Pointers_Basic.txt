@@ -2,7 +2,7 @@
 
 int main()
 {
-  int Num = 25;
+  int Num = 60;
 
   int *ptr = &Num;
   
