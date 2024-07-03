@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+typedef struct{  // structure declaration
+    int x;  // structure Member Declaration
+}first;
+
+int Square(first *s2);
+
+int main(){
+    
+    first s1 = {.x=15};  //Structure variable declaration and structure member defination
+    
+    printf("Enter a Number : ");
+    scanf("%d",&s1.x);
+    
+    int Area = Square(&s1);  //Passing Pointer to structure variabble as argument 
+    
+    printf("Area : %d\n",Area);
+    
+    return 0;
+}
+
+int Square(first *s2)
+{
+    return s2->x*s2->x;   //Assessing structure member using arrow (->) Operator
+}

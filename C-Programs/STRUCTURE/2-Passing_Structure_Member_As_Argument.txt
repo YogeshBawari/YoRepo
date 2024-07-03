@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+typedef struct {//Structure declaration
+    int x;  //declaration structure menber 
+}first;
+
+void Square(int a); //function declaration 
+
+int main()
+{
+    first s1 = {.x=25};  //defination structure member 
+    
+    Square(s1.x);   //Passing structure member as function argument
+    
+    return 0;
+}
+
+void Square(int a)  //function defination 
+{
+    printf("Area of Square : %d\n",a*a);
+}

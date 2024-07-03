@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+struct first {  //Structure decalaration
+    int x;     //structure Member
+};
+
+/*      OR
+typedef struct{
+     int x;
+ }first;
+*/
+
+int main()
+{
+    struct first s1 = {.x=10}; //structure Variable declaration and structure member defination
+    
+    printf("Enter a Number : ");
+    scanf("%d",&s1.x);
+    printf("first.x = %u\n",s1.x); 
+
+    return 0;
+}

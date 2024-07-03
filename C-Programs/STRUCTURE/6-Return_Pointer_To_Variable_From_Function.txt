@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+typedef struct{  //structure declaration
+    int x;  // struture member declaration
+}first;
+
+first *Square(int a);  //function declaration
+
+int main(){
+    first s1 = {.x=25};  //structure variable declaration and structure member defination
+    
+    first *s3 ;
+    s3= Square(s1.x);
+    
+    printf("s3.x : %d\n",s3->x);
+    
+    return 0;
+}
+
+first *Square(int a)
+{
+    int Area = a*a;
+   static first s2;
+    s2.x =Area;
+    
+    return &s2;   //Return structure variable
+}
