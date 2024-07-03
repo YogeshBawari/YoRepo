@@ -7,7 +7,7 @@ typedef struct{  //structure declaration
 first *Square(int a);  //function declaration
 
 int main(){
-    first s1 = {.x=25};  //structure variable declaration and structure member defination
+    first s1 = {.x=20};  //structure variable declaration and structure member defination
     
     first *s3 ;
     s3= Square(s1.x);
